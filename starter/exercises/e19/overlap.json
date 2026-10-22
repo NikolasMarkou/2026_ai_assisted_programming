@@ -1,0 +1,11 @@
+{
+  "planner_only": ["shop/interface.py", "shop/test_shop.py"],
+  "slices": {
+    "a": {"owns": ["shop/parse.py"], "tests": "TestParse",
+          "goal": "read an order from text"},
+    "b": {"owns": ["shop/total.py"], "tests": "TestTotal",
+          "goal": "compute the total with the discount"},
+    "c": {"owns": ["shop/render.py", "shop/total.py"], "tests": "TestRender",
+          "goal": "render the receipt text"}
+  }
+}

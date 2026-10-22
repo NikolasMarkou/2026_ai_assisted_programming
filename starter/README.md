@@ -34,6 +34,12 @@ needs none. Windows: use WSL2 or Git Bash, because the demos and the agent call 
 | `exercises/e13-untrusted/` | A repository with 3 planted traps that only write marker files, and a scripted agent that obeys them | read `exercises/e13-task.md` |
 | `exercises/e14/` | 6 scenarios to classify and a table of your tool's data settings | read `scenarios.md` |
 | `exercises/capstone/` | A bookmarks app with tests, a 4-feature backlog and a pull request template | read `backlog.md` |
+| `exercises/e16/` | A ratchet on a toy task with scripted proposers: a frozen evaluator, one mutable file, a protected-file check and a run-log demo | `python3 exercises/e16/ratchet.py` |
+| `exercises/e17/` | A Ralph loop on a toy fix plan: a scripted model, tests as backpressure, a pass cap, a shell version and a fresh-context against one-session demo | `python3 exercises/e17/ralph.py` |
+| `exercises/e18/` | A loop spec template with five fields, a checker, three sample specs and a runner that gives the cap and the memory file of a spec to the E17 loop | `python3 exercises/e18/check_spec.py exercises/e18/samples` |
+| `exercises/e19/` | A planner, three workers and a judge as scripts on a small order package, with a file-ownership plan, an overlap case and a lock-against-ownership toy | `python3 exercises/e19/team.py` |
+| `exercises/e20/` | Two scripted agents in git worktrees: best-of-N where you pick, a merge in each order with a same-file check, and a run that shows a worktree is not a sandbox. Needs git 2.5 or newer | `python3 exercises/e20/worktree_demo.py best` |
+| `exercises/e21/` | A small pull request that looks agent-made, a walkthrough built from real reads, a check that every claim in the text has evidence, a five-point review checklist and a hoard note. Standard library only | `python3 exercises/e21/walkthrough.py` |
 | `evals/` | Mini eval harness, scripted flaky agent and 10 tasks | read `evals/README.md` |
 | `AGENTS.md` | The instruction file of this kit, written for the tools | read it |
 
