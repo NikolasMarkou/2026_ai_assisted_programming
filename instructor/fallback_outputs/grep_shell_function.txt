@@ -1,0 +1,7 @@
+# Recorded 2026-10-21 in the trainer's agent shell (n=1, 1 shell). Temporary directory with .gitignore = build/*.log; build/main.log holds 3 lines with Overfull.
+$ type grep | head -1
+grep is a function
+$ grep -r Overfull . | wc -l
+0
+$ /usr/bin/grep -r Overfull . | wc -l
+3

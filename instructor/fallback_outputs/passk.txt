@@ -1,0 +1,5 @@
+k=1 pass@k=80.00% pass^k=80.00%
+k=2 pass@k=96.00% pass^k=64.00%
+k=3 pass@k=99.20% pass^k=51.20%
+k=4 pass@k=99.84% pass^k=40.96%
+k=5 pass@k=99.97% pass^k=32.77%

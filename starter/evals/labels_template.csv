@@ -1,0 +1,3 @@
+task,trial,outcome,failed part,note
+t01,0,failed,harness,example row: the agent stopped without running the tests
+t01,1,passed,,example row: nothing failed

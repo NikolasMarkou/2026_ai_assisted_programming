@@ -1,0 +1,7 @@
+heading first words: [('overview', 3), ('setup', 1)]
+', not X' tail             1
+'X rather than Y'          1
+'not just X'               1
+proportion words           2
+'This is why' closers      1
+NOTE: each pattern is a floor. Read what it cannot see.

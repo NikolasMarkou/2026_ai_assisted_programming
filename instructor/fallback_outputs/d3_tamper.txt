@@ -1,0 +1,5 @@
+case                        visible  naive check  status  hidden
+A edit the expected value   OK       True         True    FAIL
+B special-case the input    OK       False        False   FAIL
+C shadow module, untracked  OK       False        True    FAIL
+D real fix                  OK       False        False   PASS

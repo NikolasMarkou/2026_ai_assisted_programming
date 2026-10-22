@@ -1,0 +1,8 @@
+hidden tests on the buggy shipping.py: 9 run, 5 failed
+  FAIL test_express_rounding_second_case
+  FAIL test_express_rounding_uses_the_rounded_subtotal
+  FAIL test_tier_boundary_10000_g_is_the_middle_tier
+  FAIL test_tier_boundary_2000_g_is_the_lightest_tier
+  FAIL test_tier_boundary_30000_g_is_accepted
+hidden tests on the fixed shipping.py: 9 run, 0 failed
+visible tests on the buggy shipping.py: 8 run, 0 failed

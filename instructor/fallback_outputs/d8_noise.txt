@@ -1,0 +1,4 @@
+each run passes with probability 0.6 in both; the rule does nothing
+ 3 tasks x 2 trials: gap of 15+ points in  78% of evals, 'rule' ahead in  39%
+10 tasks x 3 trials: gap of 15+ points in  23% of evals, 'rule' ahead in  45%
+30 tasks x 5 trials: gap of 15+ points in   1% of evals, 'rule' ahead in  48%

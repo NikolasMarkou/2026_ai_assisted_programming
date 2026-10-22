@@ -1,0 +1,37 @@
+$ python3 check_refactor.py record
+tests: 9 run, all pass
+recorded legacy_baseline.json: 5 public functions
+
+$ python3 check_refactor.py   (legacy.py not changed)
+tests: 9 run, all pass
+public functions: 5 before, 5 unchanged
+measure                       before   after
+longest function (lines)          56      56  same
+duplicated lines                  13      13  same
+deepest nesting                    7       7  same
+number literals in code           20      20  same
+mutable default arguments          1       1  same
+RESULT: FAIL: no measure got smaller: nothing was refactored
+
+$ python3 check_refactor.py   (after the reference refactor)
+tests: 9 run, all pass
+public functions: 5 before, 5 unchanged
+measure                       before   after
+longest function (lines)          56      24  smaller
+duplicated lines                  13      13  same
+deepest nesting                    7       4  smaller
+number literals in code           20      20  same
+mutable default arguments          1       1  same
+NOTE: 2 measures got smaller. Was the diff only the top smell?
+RESULT: PASS
+
+$ python3 check_readme.py legacy.py README_section.md
+public functions in the code: 5
+functions the README names with (): 8
+RESULT: PASS
+
+$ python3 check_readme.py legacy.py README_section.md   (README names a function that is not there)
+public functions in the code: 5
+functions the README names with (): 9
+FAIL  the README names export_orders() but the code has no such function
+RESULT: FAIL

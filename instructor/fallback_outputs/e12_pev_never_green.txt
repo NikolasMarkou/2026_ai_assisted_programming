@@ -1,0 +1,20 @@
+$ python3 pev.py --agent "python3 never_green.py agent" --verify "python3 never_green.py verify"
+STOP: verify is still red after 2 fix attempts. No further attempt will run.
+what was tried:
+  first run
+    agent said: attempt 0: edited my notes file
+    verify exit 1: FAIL: approval.txt is not signed. Only a person signs it.
+  fix attempt 1
+    agent said: attempt 1: ran the tests again
+    verify exit 1: FAIL: approval.txt is not signed. Only a person signs it.
+  fix attempt 2
+    agent said: attempt 2: changed the check in my plan
+    verify exit 1: FAIL: approval.txt is not signed. Only a person signs it.
+what failed (output of the last verify):
+  FAIL: approval.txt is not signed. Only a person signs it.
+next: you decide. Revert the changes, fix it by hand, or change the task.
+
+$ cat attempts.log
+agent run, attempt 0
+agent run, attempt 1
+agent run, attempt 2

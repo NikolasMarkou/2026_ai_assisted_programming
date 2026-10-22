@@ -1,0 +1,4 @@
+before        : tracked=3 on-disk=3 | On branch main
+after the ';' : tracked=3 on-disk=1 | HEAD detached at <hash>
+   You are in a sparse checkout with 34% of tracked files present.
+with '&&'     : tracked=3 on-disk=3 | On branch main

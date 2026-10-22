@@ -1,0 +1,7 @@
+checker read 2 files, found 0 problems  -> GREEN
+sweep for the old value 10 in all 6 files -> 5 hits
+  AGENTS.md:1  Never set the request timeout above 10 s.
+  README.md:1  Requests time out after 10 seconds.
+  app/config.py:1  REQUEST_TIMEOUT_S = 30   # agent changed this from 10
+  deploy/service.yaml:3  value: "10"
+  docs/runbook.md:1  A call longer than 10 s is killed; page the on-call at 10 s.

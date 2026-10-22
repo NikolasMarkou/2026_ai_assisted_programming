@@ -1,0 +1,6 @@
+FAIL  imports: dependencies you did not approve: client.py: requests
+PASS  POST /notes
+PASS  GET /notes
+PASS  GET /notes/<id>
+PASS  DELETE /notes/<id>
+4 of 4 endpoints pass

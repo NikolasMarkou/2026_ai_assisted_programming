@@ -1,0 +1,14 @@
+working tree is at the base commit:
+   def year(s):
+       return int(s[:3])
+what the agent can still run:
+  $ git log --all --format=%s
+   fix: year slice is 4 characters
+   base
+  $ git diff HEAD origin/main
+   @@ -1,2 +1,2 @@
+    def year(s):
+   -    return int(s[:3])
+   +    return int(s[:4])
+after removing the remote and pruning:
+   base

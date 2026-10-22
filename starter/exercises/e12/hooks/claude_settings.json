@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "deny": ["Read(./.env)", "Read(./.env.*)", "Bash(rm *)"]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Read|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/deny_env.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PROJECT_DIR}/.claude/hooks/run_tests.py\"",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

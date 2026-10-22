@@ -1,0 +1,13 @@
+model: scripted (offline)
+0 ACT: python3 -m unittest -q 2>&1 | tail -n 15
+0 OBSERVE: FAILED (failures=5)
+1 ACT: grep -rn "def parse_date" --include=*.py .
+1 OBSERVE: ./src/dates.py:5:def parse_date(text: str) -> datetime:
+2 ACT: cat src/dates.py
+2 OBSERVE: return moment.replace(tzinfo=timezone.utc)
+3 ACT: sed -i.bak '$s/replace(tzinfo=/astimezone(/' src/dates.py && rm src/dates.py.bak
+3 OBSERVE: (no output)
+4 ACT: python3 -m unittest -q 2>&1 | tail -n 3
+4 OBSERVE: OK
+FINAL: parse_date now converts the offset to UTC. All tests pass.
+context items sent in the last request: 11

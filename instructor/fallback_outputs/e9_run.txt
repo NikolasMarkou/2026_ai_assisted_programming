@@ -1,0 +1,8 @@
+hidden tests on the buggy report.py: 5 run, 2 failed
+  FAIL test_all_values_missing_gives_an_empty_report
+  FAIL test_no_rows_gives_an_empty_report
+hidden tests on the fixed report.py: 5 run, 0 failed
+visible tests on the buggy report.py: 5 run, 0 failed
+solution tests on the buggy report.py: 6 run, 2 failed
+  FAIL test_a_night_with_no_readings
+  FAIL test_no_rows_at_all

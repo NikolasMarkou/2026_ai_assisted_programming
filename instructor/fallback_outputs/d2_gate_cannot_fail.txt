@@ -1,0 +1,3 @@
+agent tests on buggy code : 4/4 green
+spec tests on the same    : 0/3 green
+changed versions the agent tests catch: 0 of 2

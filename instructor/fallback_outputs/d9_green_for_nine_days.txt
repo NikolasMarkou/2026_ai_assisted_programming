@@ -1,0 +1,3 @@
+agent summary : 40 cases, 0 failed. Pipeline healthy.
+raw rows that are not PASS:
+   case-03 SKIPPED (exception: KeyError 'balance' swallowed by retry wrapper)

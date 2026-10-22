@@ -1,0 +1,10 @@
+2026-10-20 02:00:03 nightly: sensor 7: loaded 288 rows
+2026-10-20 02:00:03 nightly: building the summary
+Traceback (most recent call last):
+  File "nightly.py", line 18, in <module>
+    print(summary(load_rows(night)))
+  File "report.py", line 25, in summary
+    return {"days": len(by_day), "mean": round(mean_per_day(by_day), 2)}
+  File "report.py", line 17, in mean_per_day
+    return sum(daily) / len(by_day)
+ZeroDivisionError: division by zero

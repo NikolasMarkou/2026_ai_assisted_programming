@@ -1,0 +1,6 @@
+temperature 0.01 seed 1: the model picks a word . the model picks a word . the
+temperature 0.01 seed 2: the model picks a word . the model picks a word . the
+temperature 0.01 seed 3: the model picks a word . the model picks a word . the
+temperature 1.5 seed 1: the text changes from a text ) ) return sum ( " )
+temperature 1.5 seed 2: the idea in a word more often , and sends the function and
+temperature 1.5 seed 3: the test . the prompt names the model writes a list of turns

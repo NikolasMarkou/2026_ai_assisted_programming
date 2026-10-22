@@ -1,0 +1,7 @@
+ok       command  python3 -m unittest -q
+ok       command  git status --short
+ok       command  make test
+GONE     path     migrations/
+ok       path     docs/
+GONE     command  make verify
+exit code: 1

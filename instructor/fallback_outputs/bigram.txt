@@ -1,0 +1,8 @@
+word: the  temperature: 1.0  seed: 7
+most likely next words:
+  0.15 ############################## model
+  0.11 #######################        test
+  0.07 ##############                 code
+  0.07 ##############                 result
+  0.06 ############                   text
+generated: the test fails when the team runs the result . the model reads

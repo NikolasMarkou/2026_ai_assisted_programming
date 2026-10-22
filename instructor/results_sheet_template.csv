@@ -1,0 +1,2 @@
+pair,tool,exercise,time,result,note
+example,Claude Code,E10,12 min,resolve 53% pass^3 10%,example row: baseline and run_tests_first over 5 seeds

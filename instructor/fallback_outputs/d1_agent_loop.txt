@@ -1,0 +1,11 @@
+[turn 0] ACT: python3 test_dates.py
+          OBSERVE: AssertionError
+[turn 1] ACT: cat dates.py
+          OBSERVE: return int(s[:3])
+[turn 2] ACT: sed -i.bak 's/s\[:3\]/s[:4]/' dates.py && rm dates.py.bak
+          OBSERVE: (no output)
+[turn 3] ACT: python3 test_dates.py
+          OBSERVE: ok
+[turn 4] FINAL: Fixed the slice in year(); the test prints ok.
+context items after the run: 10
+check run by the harness itself: ok

@@ -1,0 +1,7 @@
+all 5 listings parse (ast.parse). Executed:
+range with a dtype     -> TypeError: 'str' object cannot be interpreted as an integer
+load json from a path  -> JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+join two paths         -> AssertionError: /etc/passwd
+round half up          -> AssertionError: (2, 0)
+['a', 'b']
+this one is fine       -> runs and its own claims hold
